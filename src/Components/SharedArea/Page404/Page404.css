@@ -1,3 +1,9 @@
-.Page404 {
-	
+.Page404 p {
+	color: rgb(53, 13, 90);
+    background-color: bisque;
+}
+
+.Page404 #link {
+	color: rgb(53, 13, 90);
+    background-color: bisque;
 }
