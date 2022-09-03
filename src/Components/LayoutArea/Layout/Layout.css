@@ -1,0 +1,41 @@
+.Layout {
+    height: 100%;
+    box-sizing: border-box; 
+    display: grid;
+    grid-template-rows: 13% 87%;
+    grid-template-columns: repeat(100,1fr);
+
+    font-family: Biotif-Regular,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+ 
+
+.Layout > header{
+	grid-column: span 100; 
+    border-bottom: 0.5px solid rgb(32, 32, 83);
+}
+
+.Layout > aside {
+	grid-column: span 30; 
+   
+}
+
+.Layout > menu{
+	grid-column: span 4;
+}
+
+.Layout > main {
+    grid-column: span 66;
+    /* כל הבאים אין בלקטור ססס */
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items:center;
+}
+
+.Layout, .Layout > *{
+   /*  border: 1px solid rgb(53, 52, 52); */
+}
+

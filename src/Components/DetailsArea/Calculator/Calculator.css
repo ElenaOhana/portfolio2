@@ -1,0 +1,74 @@
+.Calculator {
+	
+}
+
+.Calculator > .Maincountainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  perspective: 1000px;
+}
+
+.Calculator > .Maincountainer > .Thecard {
+  position: relative;
+  margin-right: 8rem;
+  margin-bottom: 8rem;
+  height: 350px;
+  width: 450px;
+  box-sizing: border-box;
+  border-radius: 13px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.Calculator > .Maincountainer > .Thecard:hover {
+  transform: rotateY(180deg);
+}
+
+.Calculator > .Maincountainer > .Thecard > .Thefront,
+.Theback {
+  position: absolute;
+  background-color: rgb(143, 136, 136);
+  color: #000;
+  border: 1px solid whitesmoke;
+  border-radius: 13px;
+  height: 350px;
+  width: 450px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  margin: 0;
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 4px 11px 0 rgb(0 0 0 / 19%);
+}
+
+.Calculator > .Maincountainer > .Thecard > .Theback {
+  transform: rotateY(180deg);
+  display: grid;
+}
+
+.Calculator > .Maincountainer > .Thecard > .Thefront > img {
+  margin: 0;
+  height: 310px;
+  width: 448px;
+  box-sizing: border-box;
+  border-radius: 13px 13px 0px 0px;
+}
+
+.Calculator > .Maincountainer > .Thecard > .Theback, .Thefront > span {
+  font-size: 1.45rem;
+}
+
+.Calculator > .Maincountainer > .Thecard > .Theback > h3 {
+  font-size: 1.5rem;
+  padding-top: 1.05rem;
+}
+.Calculator > .Maincountainer > .Thecard > .Theback > p {
+  font-size: 1.25rem;
+  margin: 1.05rem; 
+}
+
+.Calculator > .Maincountainer > .Thecard > .Theback > a > .MuiSvgIcon-root {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: black;
+}

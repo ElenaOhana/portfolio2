@@ -1,0 +1,13 @@
+.Main{
+
+}
+
+/* .Main  .Skills .Logo{
+    float: left;
+    display: inline-block;
+} */
+
+
+.Main ::selection{
+    background-color: rgb(228, 203, 173);
+}

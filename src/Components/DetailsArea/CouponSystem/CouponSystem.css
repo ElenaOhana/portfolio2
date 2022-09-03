@@ -1,0 +1,73 @@
+.CouponSystem {
+
+}
+
+.CouponSystem > .Maincountainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 550px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+.CouponSystem > .Maincountainer > .Thecard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 4rem;
+  text-align: center;
+  border-radius: 13px;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.CouponSystem > .Maincountainer:hover .Thecard {
+  transform: rotateY(180deg);
+}
+
+.CouponSystem > .Maincountainer > .Thecard > .Thefront {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(143, 136, 136);
+  color: #000;
+  border: 1px solid whitesmoke;
+  border-radius: 13px;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 4px 11px 0 rgb(0 0 0 / 19%);
+}
+
+.CouponSystem > .Maincountainer > .Thecard > .Theback {
+  transform: rotateY(180deg);
+  height: 100%;
+  width: 100%;
+}
+
+.CouponSystem > .Maincountainer > .Thecard > .Thefront > img {
+  height: 92%;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 13px 13px 0px 0px;
+}
+
+.CouponSystem > .Maincountainer > .Thecard > .Thefront > span {
+  font-size: 1.45rem;
+}
+
+.CouponSystem > .Maincountainer > .Thecard > .Theback > h3 {
+  font-size: 1.5rem;
+  padding-top: 1.05rem;
+}
+.CouponSystem > .Maincountainer > .Thecard > .Theback > p {
+  font-size: 1.25rem;
+  margin: 1.05rem; 
+}
+
+.CouponSystem > .Maincountainer > .Thecard > .Theback > a > .MuiSvgIcon-root {
+  width: 3.5rem;
+  height: 3.5rem;
+  color: black;
+}

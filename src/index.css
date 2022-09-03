@@ -1,0 +1,69 @@
+html,body, #root{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: rgb(32, 30, 30);
+
+ /*  font-family: MyNiceFont; */
+  /* font-size: 1.1em; */
+  margin-bottom: 0;;
+
+  position:relative;
+  
+  /*  background-image: linear-gradient(45deg,#eeeef8,#d2bddb); */
+ /*  background-image: linear-gradient(6deg,#dacdff 1%,rgba(218,205,255,0) 47%),#ffeaee; */
+}
+
+body::before{
+  content: '';
+  position: fixed;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  background-image: url(../src/Assets/Images/work1.png);
+  background-size: cover;
+  background-position: top center;
+  opacity: 0.35;
+}
+
+.Box {
+  display: block; /* block element*/
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 10px 10px;
+  background-color: cornsilk;
+  color: peru;
+  padding: 5px;
+  margin: 5px;
+  box-shadow: 2px;
+}
+
+.Box2 {
+  display: inline-block;
+  text-align: center;
+  border: 1px solid black;
+ /*  background-color: rgb(228, 215, 225); */
+  background-color:#EDDFB3;
+  /* color: peru; */
+  color: rgb(99, 84, 67);
+  /* color: #876445; */
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px 10px;
+  box-shadow: 0 3px 5px 0 rgb(0 0 0 / 20%), 0 4px 11px 0 rgb(0 0 0 / 19%);
+}
+
+/* @font-face {
+  src: url("../src/Assets/Fonts/Vertigo.ttf");
+  font-family: MyNiceFont;
+} */
+
+/* 
+.active{ 
+   color: var(--color-active);
+   cursor: default;
+ }
+ */

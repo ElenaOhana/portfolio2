@@ -1,0 +1,27 @@
+.EmailSenderFc {
+    margin: 20px;
+    padding: 20px;
+}
+
+.EmailSenderFc > .Headline{
+    text-align: center;
+}
+
+.EmailSenderFc .TextBox{
+    width: 450px;
+    margin: 10px !important;
+}
+
+.EmailSenderFc span{
+    color:rgb(212, 45, 16);
+    font-weight: bold;
+}
+
+.EmailSenderFc input{    
+    width: 450px;
+}
+
+.EmailSenderFc > form  #button{    
+   height: 40px;
+}
+

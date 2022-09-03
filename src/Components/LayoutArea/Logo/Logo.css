@@ -1,0 +1,15 @@
+.Logo {
+	top: -40px;
+    left: -30px;
+    position: relative;
+    /* TODO how to show hole ??*/
+
+}
+
+.Logo > img{
+    height: 250px;
+    width: 250px;
+    border: 0.5px solid rgb(32, 32, 83);
+    border-radius: 50%;
+}
+
