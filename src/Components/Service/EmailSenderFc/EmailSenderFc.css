@@ -25,3 +25,11 @@
    height: 40px;
 }
 
+.EmailSenderFc > form > textarea{
+    height: 200px;
+    width: 470px;
+    background-color: #EDDFB3;
+    border-radius: 4px;
+    color: rgb(99, 84, 67);
+}
+

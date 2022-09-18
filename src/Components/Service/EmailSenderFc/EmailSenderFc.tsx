@@ -8,12 +8,14 @@ import FeedIcon from '@mui/icons-material/Feed';
 import { useNavigate } from "react-router-dom";
 
 function EmailSenderFc(): JSX.Element {
+
     const navigation = useNavigate();
+
     const { register, handleSubmit, formState: { errors, isDirty, isValid } } = useForm<EmailModel>({
         mode: "onTouched"
-    });// maybe have to change to Email Model  
-    function send(email: EmailModel) {
+    });
 
+    function send(email: EmailModel) {
         var tempParams = {
             from_name: email.from_name,
             to_name: email.to_name,
@@ -22,8 +24,10 @@ function EmailSenderFc(): JSX.Element {
         emailjs.send('service_bgqr6s7', 'portfolio', tempParams, 'NJQIRFQ8QZ_4aK5Bk')
             .then(function (res) {
                 console.log("success", res.status);
+                alert("Your message sent successfully!");
                 navigation("/home");
             })
+            .catch(err=> alert(err.message));
     }
     return (
         <div className="EmailSenderFc Box2">
@@ -47,13 +51,13 @@ function EmailSenderFc(): JSX.Element {
                 <span>{errors.to_name?.message}</span>
                 <br />
                 <br />
-                <TextField className="TextField"
-                    label="Text: max is 500 chars" variant="outlined"
-                    {...register("message", {
+
+                <textarea placeholder="Type here your message.." {...register("message", {
                         required: true,
                         minLength: { value: 10, message: 'At least 10 characters' },
                         maxLength: { value: 500, message: 'Your message is too long' }
-                    })} />
+                    })}></textarea>
+
                 <br />
                 <span>{errors.message?.message}</span>
                 <br/>
